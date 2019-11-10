@@ -6,14 +6,14 @@ namespace Trest
     {
         static void Main(string[] args)
         {
-            var storage = new storage();
+            var storage = new Storage();
 
             while (true)
             {
                 storage.Update();
                 Console.WriteLine("Which battery do you want to charge ?");
                 string input = Console.ReadLine();
-                storage.recharge(input, 3);
+                storage.Recharge(input, 3);
             }
         }
     }

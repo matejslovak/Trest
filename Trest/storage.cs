@@ -4,18 +4,18 @@ using System.Text;
 
 namespace Trest
 {
-    class storage
+    class Storage
     {
         private readonly List<Battery> batteries;
 
-        public storage()
+        public Storage()
         {
             batteries = new List<Battery>
             {
-                new Battery("pencil battery", "AA+", 200, 0),
-                new Battery("pencil battery", "AAA+", 100, 91),
-                new Battery("pencil battery", "A+", 300, 11),
-                new Battery("car battery ", "small", 0, 0),
+                new Battery("pencil battery 2", "AA+", 200, 0),
+                new Battery("pencil battery 3", "AAA+", 100, 91),
+                new Battery("pencil battery 1", "A+", 300, 11),
+                new Battery("car battery", "small", 0, 0),
                 new Battery("truck battery", "big", 1000, 57),
             };
         }
@@ -28,12 +28,12 @@ namespace Trest
             }
         }
 
-        public void recharge(string name, int amount)
+        public void Recharge(string name, int amount)
         {
             Battery battery = FindBatteryBy(name);
             if (battery != null)
             {
-                battery.recharge(amount);
+                battery.Charge(amount);
             }
         }
 
