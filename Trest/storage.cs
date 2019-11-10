@@ -12,10 +12,10 @@ namespace Trest
         {
             batteries = new List<Battery>
             {
-                new Battery("pencil battery", "AA+", 200, 90),
-                new Battery("pencil battery", "AAA+", 100, 22),
+                new Battery("pencil battery", "AA+", 200, 0),
+                new Battery("pencil battery", "AAA+", 100, 91),
                 new Battery("pencil battery", "A+", 300, 11),
-                new Battery("car battery ", "small", 500, 0),
+                new Battery("car battery ", "small", 0, 0),
                 new Battery("truck battery", "big", 1000, 57),
             };
         }
@@ -33,7 +33,7 @@ namespace Trest
             Battery battery = FindBatteryBy(name);
             if (battery != null)
             {
-                battery.Eat(amount);
+                battery.recharge(amount);
             }
         }
 

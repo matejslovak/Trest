@@ -40,7 +40,7 @@ namespace Trest
             }
         }
 
-        public void Eat(int amount)
+        public void recharge(int amount)
         {
             Recharge += amount;
         }
