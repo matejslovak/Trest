@@ -33,7 +33,7 @@ namespace Trest
             Battery battery = FindBatteryBy(name);
             if (battery != null)
             {
-                battery.recharge(amount);
+                battery.Eat(amount);
             }
         }
 
